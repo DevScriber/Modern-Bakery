@@ -1,0 +1,31 @@
+.input{
+	
+	&__label{
+		display: block;
+	}
+
+	&__control{
+		padding: 16px 42px;
+		width: 100%;
+		border: 1px solid var(--color-secondary-dark);
+		border-radius: 8px;
+		background-color: inherit;
+		font-size: 16px;
+		font-family: Poppins,sans-serif;
+		color: var(--color-primary-dark);
+
+		&:focus {
+			border-color: var(--color-brand-normal);
+			/* снимает заданные браузером значения outline */
+			outline: none;
+		}
+
+		&::placeholder{
+			font-family: Roboto, sans-serif;
+			font-size: 16px;
+			color: var(--color-secondary-dark);
+		}
+
+	}
+	
+}

@@ -1,0 +1,30 @@
+.swiper-button{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 1s;
+
+	&.next{
+	transform: rotate(180deg);
+}
+
+}
+.icon-color1:hover {
+	--color1: var(--color-primary-dark);
+}
+
+.icon-color2:hover {
+	--color2: var(--color-primary-dark);
+}
+
+.icon-color3:hover {
+	--color3: var(--color-primary-light);
+}
+
+/*.icon-rotate {
+	rotate: 180deg;
+} спобоб развернуть саму иконку. Предпочтитеьней разворачивать сааму кнопку через transform: rotate, способ описанный ниже*/
+

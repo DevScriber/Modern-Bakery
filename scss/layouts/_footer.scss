@@ -1,0 +1,121 @@
+.footer{
+	padding: 32px 0;
+	position: relative;
+	background-image: url('../images/footer-background.png');
+	background-color: var(--color-primary-dark);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&::before,
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		background-repeat: no-repeat;
+	}
+
+	&::before{
+		background-image: url('../images/bread-small.png');
+		width: 180px;
+		height: 120px;
+		left: 0;
+		
+	}
+	&::after {
+		
+		@media screen and (min-width: $bp-tablet) {
+		background-image: url('../images/bread-large.png');
+		width: 380px;
+		height: 190px;
+		right: 0;
+		}
+	}
+	&__container{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		text-align: center;
+		@media screen and ( min-width: $bp-tablet ){
+			margin-bottom: 16px;
+			flex-direction: row;
+			text-align: left;
+		}
+	}
+	&__nav{
+		flex-basis: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media screen and ( min-width: $bp-tablet ){
+			margin-bottom: 16px;
+			flex-direction: row;
+			text-align: left;
+		}
+	}
+	&__logo{
+		flex-grow: 1;
+	}
+	&__menu{
+		flex-grow: 1;
+	}
+	&__item{
+		margin-bottom: 18px;
+		&:nth-child(4) {
+			margin: 0;;
+		}
+
+		@media screen and ( min-width: $bp-tablet ){
+			margin-bottom: 16px;
+		}
+		
+	}
+	&__address{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+		gap: 20px;
+
+		@media screen and ( min-width: $bp-tablet ){
+			margin-bottom: 16px;
+			flex-direction: row;
+			text-align: left;
+		}
+	}
+
+	&__address-list{
+	flex-grow: 1;
+	}
+	&__address-info{
+		flex-grow: 1;
+	}
+	&__adress-link {
+		color: var(--color-primary-light);
+		font-size: 16px;
+		font-weight: 300;
+		text-decoration: none;
+	}
+	&__adress-link:hover {
+		color: var(--color-brand-normal);
+	}
+	&__address-socials{
+		display: flex;
+		gap: 22px;
+		justify-content: center;
+
+		@media screen and ( min-width: $bp-tablet ){
+			justify-content: left;
+		}
+	}
+	&__address-icon{
+		fill: var(--color-primary-light);
+	}
+
+	&__adress-copyright {
+		font-size: 14px;
+		color: var(--color-secondary-dark)
+	}
+	
+}
+
+

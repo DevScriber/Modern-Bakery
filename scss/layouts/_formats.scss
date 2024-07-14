@@ -1,0 +1,36 @@
+.formats-section{
+	
+	&__slider{
+		display: flex;
+	 	align-items: center;
+	 	gap: 32px;
+	}
+
+	&__button{
+		display: none;
+
+		@media screen and (min-width: $bp-desktop){
+			display: flex;
+		}
+	}
+	
+	&__container{
+		overflow: hidden;
+	}
+
+	&__list {
+		margin-bottom: 32px;
+	}
+	//был добалены стили, но стали не нужны в применении slider-swiper
+	
+	/*&__list{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	} */
+	
+	&__title{
+		margin-bottom: 80px;
+	}
+
+}

@@ -1,0 +1,15 @@
+.link {
+  color: var(--color-primary-light);
+  /* снять стандартные стили ссылок */
+  text-decoration: none;
+  font-weight: 400;
+  /* переход цвета текста */
+  transition: color 0.3s;
+
+  &:hover {
+  color: var(--color-brand-normal);
+  /* изменять жирность шрифта в ховере не правильно, так как при наведении на элемент скачет текст. достаточным решением будет просто изменить цвет шрифта 
+
+  font-weight: 600;*/
+  }
+}

@@ -1,0 +1,49 @@
+.hero-section{
+	width: 100%;
+	padding-top: 124px;
+	padding-bottom: 32px;
+	background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("../images/hero-section-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	//вариативно
+	background-attachment: fixed;
+
+	@media screen and (min-width: $bp-desktop){
+		padding: 272px 0;
+	}
+// Ретинизация фонового изображения используется только 1 раз. ЗАКОМЕНТИЛ РЕТИНИЗАЦИЮ ИЗ-ЗА НЕКОРРЕКТНОЙ РАБОТЫ. ДОРАБОТАТЬ
+
+	//@media screen and (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+	//	background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("/main-project/images/hero-section-background@2x.jpg");
+	//}
+	
+	
+	/* короткая запись свойств для background-image 
+
+	background: url(../images/couple-in-bakery.jpg) no-repeat top cover fixed;
+	
+	!!! не работает при добавлении к фоновой картинке свойства cover*/
+	&__title{
+	margin-bottom: 0;
+	color:var(--color-primary-light);
+	text-align: center;
+	font-size: 68px;
+	line-height: 1;
+
+		@media screen and (min-width: $bp-desktop) {
+			font-size: 128px;
+			line-height: 1.5;
+			}
+	}
+
+	&__button{
+		margin: 0 auto;
+		margin-top: 48px;
+
+		@media screen and (min-width: $bp-desktop) {
+		display: none;
+		margin-top: 0;
+		}
+	}
+}
